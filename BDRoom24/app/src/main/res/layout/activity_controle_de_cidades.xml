@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:text="Lista de Cidades"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewCidades"
+        android:layout_width="409dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonAdicionarCidade"
+        android:layout_width="162dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="127dp"
+        android:text="Adicionar Cidade"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonVoltarCidade"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCidades" />
+
+    <Button
+        android:id="@+id/buttonVoltarCidade"
+        android:layout_width="162dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="127dp"
+        android:text="Voltar"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCidades" />
+</androidx.constraintlayout.widget.ConstraintLayout>
