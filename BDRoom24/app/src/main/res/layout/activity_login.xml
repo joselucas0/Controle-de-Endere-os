@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/userEmailLoginValue"
         android:layout_width="213dp"
         android:layout_height="38dp"
         android:layout_marginStart="100dp"
@@ -42,8 +42,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editSenha"
-        app.layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/userPasswordLoginValue"
+        app:layout_constraintHorizontal_bias="0.0"
         android:layout_width="213dp"
         android:layout_height="37dp"
         android:layout_marginStart="100dp"
@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/userEmailLoginValue" />
 
 
     <Button
@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonCadastro"
         android:backgroundTint="@color/azulEscuro"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordLoginValue" />
 
     <Button
         android:id="@+id/buttonCadastro"
@@ -106,7 +106,17 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/azulEscuro"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
-
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordLoginValue" />
+    <TextView
+        android:id="@+id/errorTextLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/vermelho"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordLoginValue"
+        app:layout_constraintWidth_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
