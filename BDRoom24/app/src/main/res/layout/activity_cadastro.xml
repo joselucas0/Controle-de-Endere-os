@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulPrincipal">
+
+    <TextView
+        android:id="@+id/textCadastro"
+        android:layout_width="98dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="632dp"
+        android:textColor="@color/branco"
+        android:text="Cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="205dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="538dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Nome"
+        android:paddingStart="15dp"
+        style="@styles/EditTextHintSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="196dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="434dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Email"
+        android:paddingStart="15dp"
+        style="@style/EditTextHintSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="206dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="326dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Senha"
+        android:paddingStart="15dp"
+        style="@style/EditTextHintSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="103dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="160dp"
+        android:text="Enviar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/azulEscuro"
+        app:layout_constraintStart_toEndOf="@+id/buttonVoltar" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="107dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="160dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEnviar"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/azulEscuro"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+
+    <TextView
+        android:id="@+id/errorTextFields"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="731dp"
+        android:textColor="@color/vermelho"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha"
+        app:layout_constraintWidth_percent="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
